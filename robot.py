@@ -9,6 +9,8 @@ from threading import Thread
 import os
 import random
 import shutil
+
+from base.fun_coze import Coze
 from base.func_zhipu import ZhiPu
 from image import CogView, AliyunImage, GeminiImage
 
@@ -80,6 +82,8 @@ class Robot(Job):
                 self.chat = ZhiPu(self.config.ZhiPu)
             elif DeepSeek.value_check(self.config.DEEPSEEK):
                 self.chat = DeepSeek(self.config.DEEPSEEK)
+            elif Coze.value_check(self.config.COZE):
+                self.chat = Coze(self.config.COZE)
             else:
                 self.LOG.warning("未配置模型")
                 self.chat = None

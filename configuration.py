@@ -46,3 +46,4 @@ class Config(object):
         self.ALIYUN_IMAGE = yconfig.get("aliyun_image", {})
         self.GEMINI_IMAGE = yconfig.get("gemini_image", {})
         self.SEND_RATE_LIMIT = yconfig.get("send_rate_limit", 0)
+        self.COZE = yconfig.get("coze", {})

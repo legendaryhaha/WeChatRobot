@@ -152,3 +152,8 @@ perplexity:  # -----perplexity配置这行不填-----
   model: mixtral-8x7b-instruct  # 可选模型包括：sonar-small-chat, sonar-medium-chat, sonar-pro, mixtral-8x7b-instruct等
   prompt: 你是Perplexity AI助手，请用专业、准确、有帮助的方式回答问题  # 角色设定
   trigger_keyword: ask  # 触发Perplexity服务的前置词
+
+ coze:  # -----deepseek配置这行不填-----
+  #思维链相关功能默认关闭，开启后会增加响应时间和消耗更多的token
+  api_key:  # 填写你的 API Key API Key的格式为sk-xxxxxxxxxxxxxxx
+  api_url:  # coze API 地址
